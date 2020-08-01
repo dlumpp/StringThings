@@ -7,10 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringThings", "StringThing
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1CA4275-3690-43BB-A0AB-473E15F110C1}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringThings.UnitTests", "StringThings.UnitTests\StringThings.UnitTests.csproj", "{565B25A4-AC6A-4707-A7E0-9D080D89B133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringThings.UnitTests", "StringThings.UnitTests\StringThings.UnitTests.csproj", "{565B25A4-AC6A-4707-A7E0-9D080D89B133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
