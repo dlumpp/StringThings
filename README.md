@@ -1,3 +1,5 @@
+![tests](https://github.com/dlumpp/StringThings/workflows/tests/badge.svg)
+
 # StringThings
 Handy string extensions and utilities for .NET
 
