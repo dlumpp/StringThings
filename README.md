@@ -26,4 +26,16 @@ public class HomeController(DbConnectionString connStr) {
 ```
 
 ## Case-insensitive Comparison Extensions
+Because it's so annoying to type `StringComparison.OrdinalIgnoreCase`.
+
+```cs
+using StringThings.Extensions;
+// all return true
+"ABC".EqualsIgnoreCase("abc");
+"ABC".StartsWithIgnoreCase("abc");
+"ABC".EndsWithIgnoreCase("abc");
+"ABC".ContainsIgnoreCase("abc");
+```
+
+## Other Useful Extensions
 Coming soon
