@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Dan Lumpp</Authors>
     <Description>Handy string extensions and utilities for .NET including case-insensitive comparisons and a base class for strongly-typed strings.</Description>
+    <PackageId>StringThings</PackageId>
+    <Version>1.0.0</Version>
+    <PackageDescription>Handy string extensions and utilities</PackageDescription>
+    <RepositoryUrl>https://github.com/dlumpp/StringThings</RepositoryUrl>
     <PackageProjectUrl>https://github.com/dlumpp/StringThings</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
