@@ -46,11 +46,10 @@ Prevents this error:
 
 ```cs
 using StringThings.Extensions;
-// all return true
-"principal".TakeLast(3) *italic*returns "pal"*italic*
-"ABC-123".TakeFirst(3) *italic*returns "ABC"*italic*
-"tiny".TakeLast(5) *italic*returns "tiny" (with no error!)*italic*
-"This is a sentence".TakeFirst(8) *italic*returns "This is "*italic*
+"principal".TakeLast(3) // returns "pal"
+"ABC-123".TakeFirst(3) // returns "ABC"
+"tiny".TakeLast(5) // returns "tiny" (with no error!)
+"This is a sentence".TakeFirst(8) //returns "This is "
 ```
 
 
