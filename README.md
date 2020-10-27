@@ -1,9 +1,12 @@
-![tests](https://github.com/dlumpp/StringThings/workflows/tests/badge.svg)
+![tests](https://github.com/dlumpp/StringThings/workflows/CICD/badge.svg)
 
 # StringThings
 Handy string extensions and utilities for .NET
 
 This is a collection of string things I find myself writing in every project I work on. I want to get it all down in one place so I don't keep rewriting the same stuff. Maybe it can help someone else if I make it public.
+
+## Getting Started
+`dotnet add package StringThings`
 
 ## TypedString
 Beat primitive obsession by making specific types of strings. Unique types allow you to do things like more easily inject different strings. TypedString implicitly casts to string so it can still be used with code you don't control that requires strings.
@@ -46,10 +49,10 @@ Prevents this error:
 
 ```cs
 using StringThings.Extensions;
-"principal".TakeLast(3) // returns "pal"
-"ABC-123".TakeFirst(3) // returns "ABC"
-"tiny".TakeLast(5) // returns "tiny" (with no error!)
-"This is a sentence".TakeFirst(8) //returns "This is "
+"principal".TakeLast(3); // returns "pal"
+"ABC-123".TakeFirst(3); // returns "ABC"
+"tiny".TakeLast(5); // returns "tiny" (with no error!)
+"This is a sentence".TakeFirst(8); //returns "This is "
 ```
 
 
