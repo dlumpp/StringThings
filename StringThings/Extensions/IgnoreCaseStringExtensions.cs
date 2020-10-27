@@ -12,7 +12,7 @@ namespace StringThings.Extensions
 
         public static bool EqualsIgnoreCase(this string? s, string? other)
         {
-            ThrowIfArgumentNull(nameof(s), s);
+            ThrowIfArgumentNull(nameof(s), s);            
             return s!.Equals(other, StringComparison.OrdinalIgnoreCase);
         }
 

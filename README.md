@@ -37,5 +37,22 @@ using StringThings.Extensions;
 "ABC".ContainsIgnoreCase("abc");
 ```
 
+
+## Take First/Last Characters Extensions
+No more length errors when using substring to get the leading or trailing characters from a string. Let this extension do the work for you of verifying that your substring doesn't exceed the length of the string you are evaluating.
+
+Prevents this error:
+`Index and length must refer to a location within the string.`
+
+```cs
+using StringThings.Extensions;
+// all return true
+"principal".TakeLast(3) *italic*returns "pal"*italic*
+"ABC-123".TakeFirst(3) *italic*returns "ABC"*italic*
+"tiny".TakeLast(5) *italic*returns "tiny" (with no error!)*italic*
+"This is a sentence".TakeFirst(8) *italic*returns "This is "*italic*
+```
+
+
 ## Other Useful Extensions
 Coming soon
