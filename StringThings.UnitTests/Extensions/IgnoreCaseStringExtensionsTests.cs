@@ -5,7 +5,7 @@ using StringThings.Extensions;
 
 namespace StringThings.UnitTests.Extensions
 {
-    public abstract class IgnoreCaseStringExtensionsTestFixture
+    public abstract class IgnoreCaseStringExtensionsTests
     {
         protected abstract bool Act(string? s, string? other);
 
@@ -35,22 +35,22 @@ namespace StringThings.UnitTests.Extensions
         }
     }
 
-    public class EqualsIgnoreCaseStringExtensionsTestFixture : IgnoreCaseStringExtensionsTestFixture
+    public class EqualsIgnoreCaseStringExtensionsTests : IgnoreCaseStringExtensionsTests
     {
         protected override bool Act(string? s, string? other) => s.EqualsIgnoreCase(other);
     }
 
-    public class StartsWithIgnoreCaseStringExtensionsTestFixture : IgnoreCaseStringExtensionsTestFixture
+    public class StartsWithIgnoreCaseStringExtensionsTests : IgnoreCaseStringExtensionsTests
     {
         protected override bool Act(string? s, string? other) => s.StartsWithIgnoreCase(other);
     }
 
-    public class EndsWithIgnoreCaseStringExtensionsTestFixture : IgnoreCaseStringExtensionsTestFixture
+    public class EndsWithIgnoreCaseStringExtensionsTests : IgnoreCaseStringExtensionsTests
     {
         protected override bool Act(string? s, string? other) => s.EndsWithIgnoreCase(other);
     }
 
-    public class ContainsIgnoreCaseStringExtensionsTestFixture : IgnoreCaseStringExtensionsTestFixture
+    public class ContainsIgnoreCaseStringExtensionsTests : IgnoreCaseStringExtensionsTests
     {
         protected override bool Act(string? s, string? other) => s.ContainsIgnoreCase(other);
     }
