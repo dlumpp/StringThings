@@ -40,7 +40,6 @@ using StringThings.Extensions;
 "ABC".ContainsIgnoreCase("abc");
 ```
 
-
 ## Take First/Last Characters Extensions
 No more length errors when using substring to get the leading or trailing characters from a string. Let this extension do the work for you of verifying that your substring doesn't exceed the length of the string you are evaluating.
 
@@ -55,6 +54,15 @@ using StringThings.Extensions;
 "This is a sentence".TakeFirst(8); //returns "This is "
 ```
 
+## IsNullOr* Extensions
+Why use `string.IsNullOrEmpty` or `string.IsNullOrWhiteSpace` when it could be an extension method?
+
+```cs
+using StringThings.Extensions;
+// all return true
+((string)null).IsNullOrEmpty();
+" ".IsNullOrWhiteSpace();
+```
 
 ## Other Useful Extensions
 Coming soon
