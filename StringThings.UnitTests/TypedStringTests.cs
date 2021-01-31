@@ -4,7 +4,7 @@ using Xunit;
 
 namespace StringThings.UnitTests
 {
-    public class TypedStringTestFixture
+    public class TypedStringTests
     {
         public class TestTypedString : TypedString
         {
