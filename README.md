@@ -64,5 +64,14 @@ using StringThings.Extensions;
 " ".IsNullOrWhiteSpace();
 ```
 
-## Other Useful Extensions
-Coming soon
+## EqualsAny Extensions
+Because writing `new List<string> {"A", "B"}.Contains` is annoying.
+
+```cs
+using StringThings.Extensions;
+// all return true
+var options =  new [] {"A", "B"};
+"A".EqualsAny(options);
+"B".EqualsAny(options);
+"a".EqualsAnyIgnoreCase(options);
+```
